@@ -1,0 +1,52 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: midnightblue
+}
+
+section{
+    text-align: center;
+    margin: auto;
+}
+
+#hover_button{
+    background-color: midnightblue;
+    height: 100px;
+    width: 150px;
+    border: 5px solid black;
+    transition: width 2s, height 2s, background-color 2s, transform linear 1.5s, font-size 2s, box-shadow 4s, color 2s;
+    font-size: large;
+    color: yellowgreen;
+}
+
+#hover_button:hover{
+    background-color: palevioletred;
+    width: 250px;
+    height: 200px;
+    transform: rotate(360deg);
+    font-size: 200%;
+    box-shadow: 10px 10px 10px 10px limegreen;
+    color: white;
+}
+
+#hover2{
+    background-color: midnightblue;
+    height: 100px;
+    width: 150px;
+    border: 5px solid black;
+    font-size: large;
+    color: yellowgreen;
+    transition: height 1s, width 1s, border-color 0.5s, box-shadow 0.5s, transform 0.5s, color 0.5s;
+}
+
+#hover2:hover{
+    border-color: yellowgreen;
+    box-shadow: 5px 5px 10px 2px yellow;
+    color: red;
+    transform: translate(-2px, -2px);
+    height: 150px;
+    width: 250px;
+}
