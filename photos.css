@@ -34,8 +34,8 @@
 }
 
 #nav nav img:hover{
-    width: 3.05%;
-    height: 3.05%;
+    width: 2.75%;
+    height: 2.75%;
 }
 
 #photoRow{
@@ -45,15 +45,15 @@
 }
 
 #photoRow span{
-    width: 33%;
+    width: 30%;
     margin: calc(10%/6.4);
-    border: 0.69rem solid black;
+    border: 0.5rem solid black;
     transition: border-color 0.5s, box-shadow 0.5s, transform 0.5s;
 }
 
 #photoRow span:hover{
     border-color: #00FFFF #FF0000 #FF0000 #00FFFF;
-    box-shadow: 0.5rem 0.5rem 0.4rem 0.5rem rgba(0, 0, 0, 0.70);
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.70);
     transform: translate(-0.3em, -0.3rem);
 }
 
