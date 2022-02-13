@@ -1,0 +1,53 @@
+#nav{
+    margin: 2%
+}
+
+#nav nav{
+    font-family: 'Montserrat', sans-serif;
+    border: 0.3rem solid;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+#nav nav h1{
+    padding-left: 2%;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nav nav img{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 2%;
+    object-fit: cover;
+    width: 2.5%;
+    height: 2.5%;
+}
+
+
+#photoRow{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+#photoRow span{
+    width: 33%;
+    margin: calc(10%/6.4);
+    border: 10px solid black;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+#photoRow span:hover{
+    box-shadow: 0.25rem 0.25rem 0.75rem 0.25rem #00FFFF, 0.5rem 0.5rem 0.5rem 0.5rem #FF0000;
+    transform: translate(-2px, -2px);
+}
+
+#photoRow span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
