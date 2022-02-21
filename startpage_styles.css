@@ -6,32 +6,56 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    height: 10rem;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin: 2rem 7rem ;
-    padding: 2rem;
-    width: auto;
-    height: 0.1rem;
-    font-family: 'Oswald', sans-serif;
-    border: 0.3rem solid rgba(0, 0, 0, 0.4);
-    border-left: 1rem double #D72483;
-    border-radius: 1rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    margin: 0 auto;
 }
 
-nav h1{
+nav ul{
+    width: auto;
+    margin: 2rem 7rem ;
+    padding: 2rem;
+    height: 0.1rem;
+    background-color: #1a0d6d;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    border: 0.3rem solid rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    border-left: 1rem double #D72483;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-right: 1rem double #D72483;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+nav ul li{
+    display: inline;
     color: #D72483;
     font-size: 1.35rem;
     font-weight: 400;
     transition: font-size 1s;
+    margin-left: 6rem;
 }
 
-nav h1:hover{
+nav ul li:hover{
     font-size: 1.75rem;
 }
 
-nav h1 a{
+nav ul li:first-child{
+    margin-left: 0;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li a{
     outline: none;
     text-decoration: none;
     color: #D72483;
@@ -82,4 +106,9 @@ nav h1 a{
     height: 100%;
     object-fit: cover;
     border-radius: 100px;
+}
+
+footer{
+    width: 10rem;
+    height: 10rem;
 }

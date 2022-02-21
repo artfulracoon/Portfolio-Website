@@ -22,22 +22,6 @@
     font-size: 1.55rem;
 }
 
-#nav nav img{
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-right: 2%;
-    object-fit: cover;
-    width: 2.5%;
-    height: 2.5%;
-    transition: width 0.5s, height 0.5s;
-}
-
-#nav nav img:hover{
-    width: 2.75%;
-    height: 2.75%;
-}
-
 #photoRow{
     display: flex;
     flex-direction: row;
