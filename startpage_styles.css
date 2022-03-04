@@ -92,7 +92,7 @@ nav ul li:last-child{
 
 #entry h1{
     font-size: 5rem;
-    padding: 3rem 8rem 2rem;
+    padding: 5rem 8rem 2rem;
     margin: 0;
     flex-direction: column;
     justify-content: center;
@@ -132,10 +132,23 @@ nav ul li:last-child{
 }
 
 footer{
-    display: flex;
+    display:grid;
     margin-top: 5%;
     margin-bottom: 0;
     width: 100%;
     height: 100%;
     background-color: #262626;
+    justify-content: center;
+}
+
+footer h1{
+    display:flex;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin: 1%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.35rem;
 }
