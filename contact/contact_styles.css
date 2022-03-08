@@ -1,5 +1,5 @@
 html{
-    width: fit-content;
+    width: 100%;
 }
 
 body{
@@ -82,48 +82,49 @@ nav ul li:last-child{
     margin-right: 0;
 }
 
-#entry{
+
+#Header {
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
-}
-
-#entry h1{
     font-size: 5rem;
     padding: 2rem 8rem 2rem;
-    margin: 0;
-    flex-direction: column;
+    margin: 5rem 0;
     justify-content: center;
     text-align: center;
     font-weight: 600;
     color: #262626;
+    margin-bottom: 0;
 }
 
-#entry p{
-    color: #262626;
-    padding: 1rem 15rem 1rem;
+#Contacts{
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    padding: 2rem 8rem 2rem;
     margin: 0;
-    font-size: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
     font-weight: 400;
+    color: #262626;
 }
 
-#entry_image{
-    height: 100%;
-    width: 100%;
-    margin: 2.5rem auto;
-    text-align: center;
-    display: block;
+#Contacts li{
+    margin: 2.5rem 1rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#entry_image img{
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-    border-radius: 50%;
+#Contacts li a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #262626;
 }
+
+#Contacts li img{
+    width: 3rem;
+    height: 3rem;
+}
+
 
 footer{
     width: 100%;
@@ -152,23 +153,6 @@ footer h1{
         width: auto;
     }
 
-    #entry h1{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 1rem 0 1rem;
-    }
-
-    #entry p {
-        padding: 0 5rem 0;
-    }    
-    
-    #entry_image img{
-        height: 20rem;
-        width: 80%;
-        border-radius: 50%;
-    }
-
 }
 
 @media (max-width: 414px) {
@@ -176,21 +160,9 @@ footer h1{
         width: auto;
     }
 
-    #entry h1{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 1rem 0 1rem ;
+    #Header{
+        font-size: 4rem;
+        padding: 1rem 1rem 1rem;
+        word-wrap: break-word;
     }
-
-    #entry p {
-        padding: 0 2rem 0;
-    }    
-
-    #entry_image img{
-        height: 20rem;
-        width: 80%;
-        border-radius: 50%;
-    }
-
 }
