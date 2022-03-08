@@ -3,30 +3,24 @@ html{
 }
 
 body{
-    width: fit-content;
     margin: 0 0 0;
     background-color: white;
 }
 
-nav{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
 nav ul{
     font-family: 'Oswald', sans-serif;
-    display: inline-flex;
-    justify-content: space-around;
-    position: fixed;
     width: 100%;
-    margin: 0 0;
-    padding: 1rem;
+    height: 2.75rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
     background-color: #262626;
-    flex-grow: 1;
+    padding-inline-start: 0;
 }
 
 nav ul li{
+    display: flex;
     list-style-type: none;
     font-size: 1.35rem;
     font-weight: 300;
@@ -95,7 +89,7 @@ nav ul li:last-child{
 
 #entry h1{
     font-size: 5rem;
-    padding: 5rem 8rem 2rem;
+    padding: 2rem 8rem 2rem;
     margin: 0;
     flex-direction: column;
     justify-content: center;
@@ -116,22 +110,18 @@ nav ul li:last-child{
 }
 
 #entry_image{
-    height: 30rem;
-    width: 30rem;
-    margin: 0 auto;
-}
-
-#entry_image div{
-    width: inherit;
-    height: inherit;
-    margin: 2rem 0;
-}
-
-#entry_image div img{
-    width: 100%;
     height: 100%;
+    width: 100%;
+    margin: 2.5rem auto;
+    text-align: center;
+    display: block;
+}
+
+#entry_image img{
+    width: 30rem;
+    height: 30rem;
     object-fit: cover;
-    border-radius: 100rem;
+    border-radius: 50%;
 }
 
 footer{
@@ -139,8 +129,8 @@ footer{
     display: flexbox;
     justify-content: space-around;
     margin-top: 5%;
-    margin-bottom: 0;
     background-color: #262626;
+    margin-bottom: 0;
 }
 
 footer h1{
@@ -148,32 +138,58 @@ footer h1{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     color: white;
-    margin: 1%;
-    margin-bottom: 0;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     font-size: 1.35rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 0.5% 0;
 }
 
-@media (max-width: 414px) {
-    body{
-        width: fit-content;
-        overflow-x: hidden;
+@media (min-width: 414px) and (max-width:540px) {
+    html, body{
+        width: auto;
     }
 
     #entry h1{
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 5rem 0 0 ;
+        padding: 1rem 0 1rem;
     }
 
     #entry p {
         padding: 0 5rem 0;
+    }    
+    
+    #entry_image img{
+        height: 20rem;
+        width: 80%;
+        border-radius: 50%;
     }
 
-    nav ul{
-        box-sizing: border-box;
+}
+
+@media (max-width: 414px) {
+    html, body{
+        width: auto;
     }
+
+    #entry h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0 1rem ;
+    }
+
+    #entry p {
+        padding: 0 2rem 0;
+    }    
+
+    #entry_image img{
+        height: 20rem;
+        width: 80%;
+        border-radius: 50%;
+    }
+
 }
