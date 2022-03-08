@@ -7,6 +7,13 @@ body{
     background-color: white;
 }
 
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+
 nav ul{
     font-family: 'Oswald', sans-serif;
     width: 100%;
@@ -89,7 +96,7 @@ nav ul li:last-child{
     font-family: 'Oswald', sans-serif;
     font-size: 5rem;
     padding: 2rem 8rem 2rem;
-    margin: 5rem 0;
+    margin: 3rem 0;
     justify-content: center;
     text-align: center;
     font-weight: 600;
