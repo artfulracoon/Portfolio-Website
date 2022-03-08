@@ -1,13 +1,15 @@
 #nav{
-    margin: 2%
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav nav{
     font-family: 'Montserrat', sans-serif;
     border: 0.3rem solid;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+
 } 
 
 #nav nav h1{
@@ -16,6 +18,7 @@
     text-align: center;
     text-transform: uppercase;
     transition: font-size 0.5s;
+    text-align: left;
 }
 
 #nav nav h1:hover{
@@ -45,4 +48,30 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 414px){
+
+    #photoRow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #photoRow span{
+        margin: 1rem 0 1rem;
+    }
+
+    #nav nav{
+        justify-content: center;
+    }
+
+    #nav nav h1{
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #photoRow span{
+        height: 30rem;
+        width: 80%;
+    }
 }
