@@ -88,3 +88,22 @@ button.navbar-toggler {
     background-color: rgba(245, 245, 245, 1);
     opacity: .4;
 }
+
+.card-transparent {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .card-transparent {
+        width: 20rem;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card-transparent {
+        width: 40rem;
+        display: block;
+    }
+}
