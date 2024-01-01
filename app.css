@@ -144,7 +144,7 @@ button.navbar-toggler {
 }
 
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .card-transparent {
         width: 150rem; /* Adjust the width for larger screens */
         height: 600px; /* Adjust the height for larger screens */
