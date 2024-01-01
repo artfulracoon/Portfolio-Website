@@ -76,6 +76,7 @@ button.navbar-toggler {
 #mainDiv {
     color: white;
     padding-top: 10rem;
+    grid-auto-rows: 1fr;
 }
 
 #mainDiv p {
@@ -140,3 +141,12 @@ button.navbar-toggler {
         display: block;
     }
 }
+
+#mainNavbar.scrolled{
+    background-color: #01004e;
+    transition: background-color 0.3s ease;
+}
+
+#navbarBrand.scrolled {
+    color: #f40139;
+  }

@@ -19,7 +19,7 @@
 <body>
 
   <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-xl py-0 fixed-top">
-    <a class="navbar-brand" href="../index.html">D.ACAR</a>
+    <a class="navbar-brand" href="../index.html" id="navbarBrand">D.ACAR</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navButtons" id="navbarToggler">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,8 +42,8 @@
   <div class="d-flex align-items-center justify-content-center">
     <div class="container-fluid" id="mainDiv">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="card-transparent mx-auto">
+        <div class="col-lg-6 p-3">
+          <div class="card-transparent mx-auto ">
             <img class="card-img-top"
               src="https://plus.unsplash.com/premium_photo-1684407617296-674b8a0b84ce?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Card image cap">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-3">
           <div class="card-transparent mx-auto">
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -84,7 +84,7 @@
   <div class="d-flex  align-items-center justify-content-center">
     <div class="container-fluid" id="mainDiv">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-3">
           <div class="card-transparent mx-auto">
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1518384401463-d3876163c195?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -100,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 p-3">
           <div class="card-transparent mx-auto">
             <img class="card-img-top"
               src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -129,6 +129,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $(document).scroll(function(){
+        var $nav = $("#mainNavbar");
+        var $brand = $("#navbarBrand");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        $brand.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      })
+    })
+  </script>
+
 </body>
 
 </html>
