@@ -198,7 +198,7 @@ button.navbar-toggler {
   
     /* Adjust the image size */
     #latestCard img {
-      height: 200px; /* Adjust the image height for 1080p screens */
-      width: auto;
+      height: 240px; /* Adjust the image height for 1080p screens */
+      width: 600px;
     }
   }
