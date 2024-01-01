@@ -184,7 +184,7 @@ button.navbar-toggler {
     }
 }
 
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
     .card-transparent {
       width: 100%; /* Adjust the width for 1080p screens */
       height: 80vh; /* Adjust the height for 1080p screens */
