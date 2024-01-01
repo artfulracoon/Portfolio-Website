@@ -84,6 +84,7 @@ button.navbar-toggler {
 }
 
 .card-transparent {
+    height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -99,15 +100,18 @@ button.navbar-toggler {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1; /* To fill the available space */
+    flex: 1;
+    /* To fill the available space */
 }
 
 #latestCard img {
     max-width: 70%;
-    max-height: 100%; /* Adjust the percentage to your preference */
+    max-height: 100%;
+    /* Adjust the percentage to your preference */
     width: auto;
     height: auto;
-    border-radius: 1rem 1rem 0 0; /* Match the border radius of the card */
+    border-radius: 1rem 1rem 0 0;
+    /* Match the border radius of the card */
 }
 
 
@@ -115,10 +119,11 @@ button.navbar-toggler {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Optional: Adjust height as needed */
+    height: 100%;
+    /* Optional: Adjust height as needed */
 }
 
-.overflow-hidden{
+.overflow-hidden {
     text-align: center;
     justify-content: center;
 }
@@ -145,23 +150,27 @@ button.navbar-toggler {
 
 @media (max-width: 1200px) {
     .card-transparent {
-        width: 150rem; /* Adjust the width for larger screens */
-        height: 600px; /* Adjust the height for larger screens */
-        max-height: 80vh; /* Adjust the maximum height as needed */
+        width: 150rem;
+        /* Adjust the width for larger screens */
+        height: 600px;
+        /* Adjust the height for larger screens */
+        max-height: 80vh;
+        /* Adjust the maximum height as needed */
         overflow: auto;
     }
 
-    .card-transparent .card-body p{
-        font-size: 1.25rem !important; /* Adjust the font size for the content */
+    .card-transparent .card-body p {
+        font-size: 1.25rem !important;
+        /* Adjust the font size for the content */
     }
-    
+
     .card-transparent img {
         height: 5rem;
         width: auto;
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
 
     #latestCard {
         margin-top: 3rem;
@@ -175,3 +184,21 @@ button.navbar-toggler {
     }
 }
 
+@media (min-width: 1920px) {
+    .card-transparent {
+      width: 100%; /* Adjust the width for 1080p screens */
+      height: 80vh; /* Adjust the height for 1080p screens */
+      overflow: auto;
+    }
+  
+    /* Additional adjustments for the card's content */
+    .card-transparent .card-body p {
+      font-size: 1rem; /* Adjust the font size for the content */
+    }
+  
+    /* Adjust the image size */
+    #latestCard img {
+      height: 200px; /* Adjust the image height for 1080p screens */
+      width: auto;
+    }
+  }
