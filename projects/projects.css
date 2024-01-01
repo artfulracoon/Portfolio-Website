@@ -92,6 +92,9 @@ button.navbar-toggler {
 .card-transparent {
     width: 100%;
     display: block;
+    background: #01004e;
+    outline: 0.75rem solid #01004e;
+    border-radius: 1rem;
 }
 
 @media screen and (max-width: 600px) {

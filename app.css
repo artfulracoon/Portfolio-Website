@@ -83,14 +83,48 @@ button.navbar-toggler {
     color: #f40139;
 }
 
-.card {
-    background-color: rgba(245, 245, 245, 1);
-    opacity: .4;
+.card-transparent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #01004e;
+    border-radius: 1rem;
+}
+
+
+.card-transparent .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* To fill the available space */
 }
 
 #latestCard img {
-    width: 100%;
-    display: block;
+    max-width: 70%;
+    max-height: 100%; /* Adjust the percentage to your preference */
+    width: auto;
+    height: auto;
+    border-radius: 1rem 1rem 0 0; /* Match the border radius of the card */
+}
+
+
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Optional: Adjust height as needed */
+}
+
+.overflow-hidden{
+    text-align: center;
+    justify-content: center;
+}
+
+#latestCard .card-body {
+    width: 70%;
 }
 
 @media (max-width: 280px) {
@@ -101,15 +135,25 @@ button.navbar-toggler {
     #latestCard {
         margin-top: 5rem;
     }
+
+    #latestCard img {
+        height: 5rem;
+        width: auto;
+        display: block;
+    }
 }
 
 @media (max-width: 600px){
-    #mainDiv {
-        padding-top: 60rem;
-    }
 
     #latestCard {
-        margin-top: 5rem;
+        margin-top: 3rem;
+        display: none;
+    }
+
+    #latestCard img {
+        height: 14rem;
+        width: auto;
+        display: block;
     }
 }
 
