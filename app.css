@@ -143,6 +143,24 @@ button.navbar-toggler {
     }
 }
 
+
+@media (min-width: 1200px) {
+    .card-transparent {
+        width: 150rem; /* Adjust the width for larger screens */
+        height: 600px; /* Adjust the height for larger screens */
+        overflow: scroll;
+    }
+
+    .card-transparent .card-body p{
+        font-size: 1.25rem !important; /* Adjust the font size for the content */
+    }
+    
+    .card-transparent img {
+        height: 5rem;
+        width: auto;
+    }
+}
+
 @media (max-width: 600px){
 
     #latestCard {
@@ -157,9 +175,3 @@ button.navbar-toggler {
     }
 }
 
-@media (min-width: 600px) and (max-width: 768px){
-
-    #latestCard {
-        margin-top: 20rem;
-    }
-}

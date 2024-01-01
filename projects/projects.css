@@ -95,6 +95,36 @@ button.navbar-toggler {
     background: #01004e;
     outline: 0.75rem solid #01004e;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-transparent img {
+    /* Your existing styles */
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.card-transparent .card-body {
+    text-align: center; /* Center-align text */
+}
+
+@media (min-width: 1200px) {
+
+    .card-transparent .card-body p {
+        font-size: 2rem !important;
+        /* Adjust the font size for the content */
+    }
+
+    .card-transparent img {
+        object-fit: cover;
+        width: 460px;
+        height: 460px;
+    }
 }
 
 @media screen and (max-width: 600px) {
