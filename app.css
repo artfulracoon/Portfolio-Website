@@ -138,7 +138,7 @@ button.navbar-toggler {
 
 @media (max-width: 280px) {
     #mainDiv {
-        padding-top: 70rem;
+        padding-top: 0rem;
     }
 
     #latestCard {
@@ -159,10 +159,8 @@ button.navbar-toggler {
         display: none;
     }
 
-    #latestCard img {
-        height: 14rem;
-        width: auto;
-        display: block;
+    #mainDiv {
+        margin-top: 10rem;
     }
 }
 
