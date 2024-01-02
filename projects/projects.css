@@ -92,12 +92,9 @@ button.navbar-toggler {
 
 .card-transparent {
     width: 80%;
-    /* Adjust the width of the card */
     max-width: 450px;
-    /* Set a maximum width for responsiveness */
     height: 80%;
     max-height: 800px;
-    /* Allow the height to adjust based on content */
     display: block;
     background: #01004e;
     outline: 0.75rem solid #01004e;
@@ -124,12 +121,12 @@ button.navbar-toggler {
 
 .card-transparent .card-body h1 {
     font-size: 1.5rem;
-    /* Decrease the size of the heading */
+   
 }
 
 #cardText {
     font-size: 1.5rem !important;
-    /* Decrease the size of the paragraph */
+    
 }
 
 .row.align-items-center {
@@ -141,9 +138,9 @@ button.navbar-toggler {
 }
 
 .card-transparent .card-img-top {
-    width: 100%; /* Ensure the image takes up full width of the container */
-    height: 20rem; /* Set a fixed height for the images */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    width: 100%; 
+    height: 20rem; 
+    object-fit: cover; 
   }
 
 @media (min-width: 1200px) {
@@ -159,10 +156,17 @@ button.navbar-toggler {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
   
     #mainDiv .col-lg-6 {
-      margin-bottom: 20px; /* Add some space between columns on smaller screens */
+      margin-bottom: 20px; 
+    }
+
+    .row-margin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
   }
 

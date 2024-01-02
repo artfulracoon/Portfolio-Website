@@ -132,3 +132,15 @@ button.navbar-toggler {
     }
 
 }
+
+
+/*JAVASCRIPT*/
+
+#mainNavbar.scrolled {
+    background-color: #01004e;
+    transition: background-color 0.3s ease;
+}
+
+#navbarBrand.scrolled {
+    color: #f40139;
+}
