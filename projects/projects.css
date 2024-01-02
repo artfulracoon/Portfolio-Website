@@ -76,6 +76,7 @@ button.navbar-toggler {
 #mainDiv {
     color: white;
     grid-auto-rows: 1fr;
+    margin-top: 8rem;
 }
 
 #mainDiv p {
@@ -90,27 +91,60 @@ button.navbar-toggler {
 }
 
 .card-transparent {
-    width: 100%;
+    width: 80%;
+    /* Adjust the width of the card */
+    max-width: 450px;
+    /* Set a maximum width for responsiveness */
+    height: 80%;
+    max-height: 800px;
+    /* Allow the height to adjust based on content */
     display: block;
     background: #01004e;
     outline: 0.75rem solid #01004e;
     border-radius: 1rem;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
 }
 
 .card-transparent img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .card-transparent .card-body {
-    text-align: center; 
+    text-align: center;
+    padding: 20px
 }
+
+.card-transparent .card-body h1 {
+    font-size: 1.5rem;
+    /* Decrease the size of the heading */
+}
+
+#cardText {
+    font-size: 1.5rem !important;
+    /* Decrease the size of the paragraph */
+}
+
+.row.align-items-center {
+    display: flex;
+}
+
+.col-lg-6 {
+    display: flex;
+}
+
+.card-transparent .card-img-top {
+    width: 100%; /* Ensure the image takes up full width of the container */
+    height: 20rem; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
 
 @media (min-width: 1200px) {
 
@@ -125,28 +159,21 @@ button.navbar-toggler {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .card-transparent {
-        width: 20rem;
-        display: block;
+@media screen and (max-width: 767px) {
+  
+    #mainDiv .col-lg-6 {
+      margin-bottom: 20px; /* Add some space between columns on smaller screens */
     }
-}
-
-@media screen and (min-width: 600px) {
-    .card-transparent {
-        width: 40rem;
-        display: block;
-    }
-}
+  }
 
 
 /*JAVASCRIPT*/
 
-#mainNavbar.scrolled{
+#mainNavbar.scrolled {
     background-color: #01004e;
     transition: background-color 0.3s ease;
 }
 
 #navbarBrand.scrolled {
     color: #f40139;
-  }
+}
