@@ -101,17 +101,16 @@ button.navbar-toggler {
     justify-content: center;
     align-items: center;
     flex: 1;
-    /* To fill the available space */
+    
 }
 
 #latestCard img {
     max-width: 70%;
     max-height: 100%;
-    /* Adjust the percentage to your preference */
     width: auto;
     height: auto;
     border-radius: 1rem 1rem 0 0;
-    /* Match the border radius of the card */
+    
 }
 
 
@@ -120,7 +119,7 @@ button.navbar-toggler {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* Optional: Adjust height as needed */
+    
 }
 
 .overflow-hidden {
@@ -148,28 +147,6 @@ button.navbar-toggler {
     }
 }
 
-@media (max-width: 1200px) {
-    .card-transparent {
-        width: 150rem;
-        /* Adjust the width for larger screens */
-        height: 600px;
-        /* Adjust the height for larger screens */
-        max-height: 80vh;
-        /* Adjust the maximum height as needed */
-        overflow: auto;
-    }
-
-    .card-transparent .card-body p {
-        font-size: 1.25rem !important;
-        /* Adjust the font size for the content */
-    }
-
-    .card-transparent img {
-        height: 5rem;
-        width: auto;
-    }
-}
-
 @media (max-width: 600px) {
 
     #latestCard {
@@ -184,21 +161,40 @@ button.navbar-toggler {
     }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1200px) {
     .card-transparent {
-      width: 100%; /* Adjust the width for 1080p screens */
-      height: 80vh; /* Adjust the height for 1080p screens */
+        width: 150rem;
+        height: 800px;
+        max-height: 80vh;
+        overflow: auto;
+    }
+
+    .card-transparent .card-body p {
+        font-size: 1.25rem !important;
+    }
+
+    .card-transparent img {
+        margin-top: 50px;
+        height: 5rem;
+        width: auto;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+    .card-transparent {
+      width: 100%; 
+      height: 80vh; 
       overflow: auto;
     }
   
-    /* Additional adjustments for the card's content */
+    
     .card-transparent .card-body p {
-      font-size: 1rem; /* Adjust the font size for the content */
+      font-size: 1rem; 
     }
   
-    /* Adjust the image size */
+    
     #latestCard img {
-      height: 240px; /* Adjust the image height for 1080p screens */
+      height: 240px; 
       width: 600px;
     }
   }
