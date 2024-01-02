@@ -77,10 +77,16 @@ button.navbar-toggler {
     color: white;
 }
 
-.card {
-    background: #01004e;
-    width: 500px; 
-    height: 300px;
+.card-transparent {
+    width: 80%; /* Adjust the width of the cards */
+    max-width: 300px; /* Limit the maximum width of the cards */
+}
+
+.card-transparent img {
+    max-width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
 }
 
 .card-body {
@@ -97,18 +103,18 @@ button.navbar-toggler {
     margin-bottom: 2rem; 
 }
 
-.card-img-top {
-    justify-content: center;
-    text-align: center;
-    height: 15rem;
-    width: 15rem;
-}
-
 #refs{
     color: white;
 }
 
 @media (max-width: 576px) { 
+
+    .card-transparent img {
+        max-width: 100%; 
+        height: auto;
+        display: block;
+        margin: 0 auto; 
+    }
 
     #theRowToPushDown{
         margin-top: 57rem;
@@ -116,11 +122,6 @@ button.navbar-toggler {
 
     #refs{
         margin-top: 50rem;
-    }
-
-    .card-img-top {
-        max-width: 100px; 
-        height: auto;
     }
 
     .row-margin {
