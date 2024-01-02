@@ -107,3 +107,19 @@ button.navbar-toggler {
 #refs{
     color: white;
 }
+
+@media (max-width: 576px) { /* Small devices (576px and below) */
+
+    #theRowToPushDown{
+        margin-top: 40rem;
+    }
+
+    #refs{
+        margin-top: 30rem;
+    }
+
+    .card-img-top {
+        max-width: 100px; /* Set your desired smaller width */
+        height: auto;
+    }
+}
