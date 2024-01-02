@@ -76,3 +76,34 @@ button.navbar-toggler {
 #mainDiv {
     color: white;
 }
+
+.card {
+    background: #01004e;
+    width: 500px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+}
+
+.card-body {
+    color: #f40139;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Custom margin for rows */
+.row-margin {
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* Adjust the value as needed */
+}
+
+.card-img-top {
+    justify-content: center;
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+#refs{
+    color: white;
+}
