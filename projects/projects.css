@@ -71,11 +71,10 @@ button.navbar-toggler {
     margin: 0.5rem;
 }
 
-/* NAVBAR */
+/* NAVBAR ENDS */
 
 #mainDiv {
     color: white;
-    padding-top: 10rem;
     grid-auto-rows: 1fr;
 }
 
