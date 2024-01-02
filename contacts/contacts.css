@@ -79,8 +79,8 @@ button.navbar-toggler {
 
 .card {
     background: #01004e;
-    width: 500px; /* Set your desired width */
-    height: 300px; /* Set your desired height */
+    width: 500px; 
+    height: 300px;
 }
 
 .card-body {
@@ -91,10 +91,10 @@ button.navbar-toggler {
     align-items: center;
 }
 
-/* Custom margin for rows */
+
 .row-margin {
     margin-top: 1rem;
-    margin-bottom: 2rem; /* Adjust the value as needed */
+    margin-bottom: 2rem; 
 }
 
 .card-img-top {
@@ -108,7 +108,7 @@ button.navbar-toggler {
     color: white;
 }
 
-@media (max-width: 576px) { /* Small devices (576px and below) */
+@media (max-width: 576px) { 
 
     #theRowToPushDown{
         margin-top: 40rem;
@@ -119,7 +119,7 @@ button.navbar-toggler {
     }
 
     .card-img-top {
-        max-width: 100px; /* Set your desired smaller width */
+        max-width: 100px; 
         height: auto;
     }
 }

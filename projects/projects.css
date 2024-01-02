@@ -103,22 +103,20 @@ button.navbar-toggler {
 }
 
 .card-transparent img {
-    /* Your existing styles */
-    max-width: 100%; /* Ensure the image fits within the card */
+    max-width: 100%; 
     height: auto;
     display: block;
-    margin: 0 auto; /* Centers the image horizontally */
+    margin: 0 auto; 
 }
 
 .card-transparent .card-body {
-    text-align: center; /* Center-align text */
+    text-align: center; 
 }
 
 @media (min-width: 1200px) {
 
     .card-transparent .card-body p {
         font-size: 2rem !important;
-        /* Adjust the font size for the content */
     }
 
     .card-transparent img {
