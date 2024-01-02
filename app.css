@@ -131,6 +131,11 @@ button.navbar-toggler {
     width: 70%;
 }
 
+.col-lg-5{
+    margin-top: 7rem;
+}
+
+
 @media (max-width: 280px) {
     #mainDiv {
         padding-top: 70rem;
