@@ -153,6 +153,10 @@ nav a:hover {
 
 /* CARDS */
 
+/* CARDS */
+
+/* CARDS */
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -165,7 +169,6 @@ nav a:hover {
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Distributes space evenly between the cards */
     gap: 5rem; /* Adds space between the cards */
 }
 
@@ -175,9 +178,11 @@ nav a:hover {
     border: #333;
     border-radius: 1%;
     border-style: solid;
-    height: auto;
+    margin-bottom: 0; /* Remove any default bottom margin */
+    padding: 10px; /* Adjust padding as needed */
+    height: 35rem; /* Set a minimum height if needed */
+    overflow: hidden; /* Control overflow to manage layout */
 }
-
 
 .card:hover {
     transform: translateY(-10px);

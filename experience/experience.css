@@ -152,11 +152,11 @@ section {
 #profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: auto;
+  align-items: center;
 }
 
 .border{
+  width: 50rem;
   height: 38rem;
   border-radius: 2%;
   border: 0.1rem;
@@ -173,7 +173,6 @@ section {
 .experience {
   display:flex;
   margin: 1rem;
-  
 }
 
 .section__pic-container {
@@ -216,6 +215,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  font-size: 1.5rem;
   color: #333;
 }
 
