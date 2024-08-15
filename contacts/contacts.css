@@ -1,146 +1,226 @@
-html,
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    height: 100%;
-    font-family: "Oswald";
-    background-image: url(https://images.unsplash.com/photo-1614851099511-773084f6911d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D        
-);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
 }
 
-/* NAVBAR */
+html {
+    scroll-behavior: smooth;
+}
 
-#mainNavbar .navbar-brand {
-    color: #01004e;
+p {
+    color: rgb(85,85,85);
+}
+
+/* TRANSITION*/
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAVBAR */
+
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
     font-size: 1.5rem;
-    font-weight: 600;
-
 }
 
-#mainNavbar .nav-link {
-    color: white;
-    font-size: 1.5rem;
-}
-
-#mainNavbar .nav-link:hover {
-    color: #f40139;
-    font-size: 1.5rem;
-}
-
-.navbar-toggler {
-    background-color: #f40139;
-}
-
-#mainNavbar .dropdown-menu {
-    margin: 0 auto;
-    background-color: black;
-}
-
-#mainNavbar .dropdown-menu a {
-    font-size: 1.5rem;
-    color: white;
-}
-
-#mainNavbar .dropdown-menu a:hover {
-    font-size: 2rem;
-    color: #f40139;
-    background-color: black;
-}
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-
-.navbar-nav {
-    flex-flow: row nowrap;
-
-}
-
-.navbar-nav li {
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: all 300ms ease;
     padding: 1rem;
+    border-radius: 2rem;
 }
 
-.navbar {
-    display: inline-flex;
+nav a:hover {
+    border: rgb(0, 0, 0) 0.1rem solid;
+    color: white;
+    background-color: black;
 }
 
-button.navbar-toggler {
-    padding: 0.5rem;
-    margin: 0.5rem;
+.logo {
+    font-size: 2rem;
 }
 
-/* NAVBAR */
+.logo:hover{
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out; 
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f2f2f2;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out; 
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: center;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* MAIN DIV */
 
 #mainDiv {
     color: white;
-}
-
-.card-transparent {
-    width: 80%; /* Adjust the width of the cards */
-    max-width: 300px; /* Limit the maximum width of the cards */
-}
-
-.card-transparent img {
-    max-width: 50%; 
-    height: auto;
-    display: block;
-    margin: 0 auto; 
-}
-
-.card-body {
-    color: #f40139;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row; /* Stacks items vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    padding: 10vh 10vh 10vh 10vh;
+}
+
+#rightSide {
+    display: flex; /* Makes the row a flex container */
+    width: 80%; /* Ensure each row takes the full width */
+    flex-direction: row; /* Stacks items vertically */;
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
+    justify-content: center; /* Center content horizontally */
     align-items: center;
 }
 
+#rightSide #content {
+    display: flex;
 
-.row-margin {
-    margin-top: 1rem;
-    margin-bottom: 2rem; 
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    margin: 5vh;
 }
 
-#refs{
+#rightSide img{
+    max-width: 30%; 
+    min-width: 15vh;
+    height: auto;
+}
+
+#refs a{
     color: white;
 }
 
-@media (max-width: 576px) { 
-
-    .card-transparent img {
-        max-width: 100%; 
-        height: auto;
-        display: block;
-        margin: 0 auto; 
-    }
-
-    #theRowToPushDown{
-        margin-top: 57rem;
-    }
-
-    #refs{
-        margin-top: 50rem;
-    }
-
-    .row-margin {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
+#contactFormContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10vh;
+    background-color: #f9f9f9;
+    border-radius: 10vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/*JAVASCRIPT*/
-
-#mainNavbar.scrolled {
-    background-color: #01004e;
-    transition: background-color 0.3s ease;
+#contactForm h1 {
+    color: black;
+    padding-bottom: 5vh;
 }
 
-#navbarBrand.scrolled {
-    color: #f40139;
+#contactForm .form-group {
+    margin-bottom: 15px;
 }
+
+#contactForm label {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+

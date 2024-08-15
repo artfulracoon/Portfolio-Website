@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dogukan's Website</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/667/667318.png"
+    />
+    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Doğukan Acar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../experience/experience.html">Experience</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contacts/contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Doğukan Acar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="../experience/experience.html" onclick="toggleMenu()">Experience</a></li>
+          <li>
+            <a href="../projects/projects.html" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="../contacts/contacts.html" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <p class="section__text__p1">My Academic and Professional</p>
+    <p class="title">Experiences</p>
+
+    <section id="profile">
+      <div class="border">
+        <p class="title">Ege Üniversitesi</p>
+
+        <div class="experience">
+          <div class="section__pic-container">
+            <img src="../assets/ege.png" alt="" />
+          </div>
+
+          <div class="section__text">
+            <ul>
+              <li>
+                <p>Ege Üniversitesi Computer Engineering Bachelors' Degree</p>
+              </li>
+              <li>
+                <p>3.61 GPA & High Honors' Degree</p>
+              </li>
+              <li>
+                <p>2018-2023</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border">
+        <p class="title">Free University of Bolzano</p>
+        <div class="experience">
+          <div class="section__pic-container">
+            <img src="../assets/bolzano.png" alt="" />
+          </div>
+
+          <div class="section__text">
+            <ul>
+              <li>
+                <p>Erasmus at UNIBZ Computer Science</p>
+              </li>
+              <li>
+                <p>Experienced European Academy firsthand</p>
+              </li>
+              <li>
+                <p>2021 - 2022 Spring Semester</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border">
+        <p class="title">Endian Srl</p>
+
+        <div class="experience">
+          <div class="section__pic-container">
+            <img src="../assets/endian.png" alt="" />
+          </div>
+
+          <div class="section__text">
+            <ul>
+              <li>
+                <p>QA Engineer @ Endian Srl</p>
+              </li>
+              <li>
+                <p>Started as an intern, now a fully quailified engineer</p>
+              </li>
+              <li>
+                <p>2022 - Current</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../script.js"></script>
+  </body>
+</html>

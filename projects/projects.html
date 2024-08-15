@@ -1,167 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dogukan's Website</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/667/667318.png"
+    />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Doğukan Acar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../experience/experience.html">Experience</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contacts/contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dogukan's Website</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/667/667318.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <nav id="hamburger-nav">
+      <div class="logo">Doğukan Acar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="../experience/experience.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="../projects/projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="../contacts/contacts.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="projects.css">
-</head>
 
-<body>
+  <p class="section__text__p1">Here are some of my</p>
+  <p class="title">Recent Projects</p>
 
-  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-xl py-0 fixed-top">
-    <a class="navbar-brand" href="../index.html" id="navbarBrand">HOME</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navButtons" id="navbarToggler">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="card-container">
 
-    <div class="collapse navbar-collapse" id="navButtons">
-      <ul class="navbar-nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="projectsButton">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../blog/blog.html">BLOG</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../contacts/contacts.html">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="d-flex align-items-center justify-content-center">
-    <div class="container-fluid" id="mainDiv">
-      <div class="row align-items-center">
-        <div class="col-lg-4 p-3">
-          <div class="card-transparent mx-auto ">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1571046314604-e32adfc8e11e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="">
-            <div class="card-body">
-              <h1 class="card-title">Bus Ticketing System</h1>
-              <p class="card-text" id="cardText">Written on C# and designed with Visual
+    <div class="row">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571046314604-e32adfc8e11e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="" class="card-image">
+          <div class="card-content">
+              <h2 class="card-title">Bus Ticketing System</h2>
+              <p class="card-description">Written on C# and designed with Visual
                 Studio, this app
                 lets users reserve individual bus seats, selecting from
                 different voyages and cities.
                 This project uses SQL as a database for said data, and has a
-                built in admin panel.
-              </p>
-              <a href="https://github.com/artfulracoon/Bus-Ticketing-System-On-CSharp"
-                class="btn btn-primary">Github</a>
-            </div>
+                built in admin panel.</p>
+              <a href="https://github.com/artfulracoon/Bus-Ticketing-System-On-CSharp" class="card-button">Github</a>
           </div>
-        </div>
-
-
-        <div class="col-lg-4 p-3">
-          <div class="card-transparent mx-auto ">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1682072155213-856c2ab9d629?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="">
-            <div class="card-body">
-              <h1 class="card-title">QR Code Interactive System with Flutter</h1>
-              <p class="card-text" id="cardText">This is a Flutter app that reads a QR Code and from the URL it reads, 
+      </div>
+  
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1682072155213-856c2ab9d629?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" class="card-image">
+          <div class="card-content">
+              <h2 class="card-title">QR Code Interactive System with Flutter</h2>
+              <p class="card-description">This is a Flutter app that reads a QR Code and from the URL it reads, 
                 accesses the Firebase database I created to redirect the user to a customized app structure original to the URL.
               </p>
-              <a href="https://github.com/artfulracoon/Bus-Ticketing-System-On-CSharp"
-                class="btn btn-primary">Github</a>
-            </div>
+              <a href="https://github.com/artfulracoon/QR-Code-Interactive-System-with-Flutter" class="card-button">Github</a>
           </div>
-        </div>
-
-
-        <div class="col-lg-4 p-3">
-          <div class="card-transparent mx-auto">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="">
-            <div class="card-body">
-              <h1 class="card-title" >Lexical Analyzer and Interpreter</h1>
-              <p class="card-text" id="cardText">Written in C, this project correctly
-                lexical analyzes,
-                interprets and runs code for a made-up language called
-                bigAdd. Supports variables, basic mathematical equations, nested loops and more.</p>
-              <a href="https://github.com/artfulracoon/Lexical-Analyzer-and-Interpreter-For-BigAdd-Language"
-                class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     </div>
-  </div>
 
-  <div class="d-flex align-items-center justify-content-center second-container">
-    <div class="container-fluid" id="mainDiv">
-      <div class="row align-items-center">
-        <div class="col-lg-6 p-3">
-          <div class="card-transparent mx-auto">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1518384401463-d3876163c195?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="">
-            <div class="card-body">
-              <h1 class="card-title">Notepad with Autocorrect</h1>
-              <p class="card-text" id="cardText">This is a fully functional notepad app
-                coded on Java and
-                designed with Swift. With all things you expect a notepad
-                does, it also has an autocorrect function.</p>
-              <a href="https://github.com/artfulracoon/Java-Text-Editor-with-Autocorrect"
-                class="btn btn-primary">Github</a>
-            </div>
-          </div>
+   <div class="row">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Lexical Analyzer and Interpreter</h2>
+            <p class="card-description">Written in C, this project correctly
+              lexical analyzes,
+              interprets and runs code for a made-up language called
+              bigAdd. Supports variables, basic mathematical equations, nested loops and more.</p>
+            <a href="https://github.com/artfulracoon/Lexical-Analyzer-and-Interpreter-For-BigAdd-Language" class="card-button">Github</a>
         </div>
-        <div class="col-lg-6 p-3">
-          <div class="card-transparent mx-auto">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="">
-            <div class="card-body">
-              <h1 class="card-title">Portfolio Website</h1>
-              <p class="card-text" id="cardText">This is the website you are visiting now!
-                It is written with HTML, CSS and Bootstrap 4.
-              </p>
-              <a href="https://github.com/artfulracoon/Portfolio-Website" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518384401463-d3876163c195?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Notepad with Autocorrect</h2>
+            <p class="card-description">This is a fully functional notepad app
+              coded on Java and
+              designed with Swift. With all things you expect a notepad
+              does, it also has an autocorrect function.</p>
+            <a href="https://github.com/artfulracoon/Java-Text-Editor-with-Autocorrect" class="card-button">Github</a>
+        </div>
+    </div>
+   </div>
 
-  <script>
-    $(function () {
-      $(document).scroll(function(){
-        var $nav = $("#mainNavbar");
-        var $brand = $("#navbarBrand");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        $brand.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-      })
-    })
-  </script>
+    
 
-</body>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="" class="card-image">
+        <div class="card-content">
+            <h2 class="card-title">Portfolio Website</h2>
+            <p class="card-description">This is the website you are visiting now!
+              It is written with HTML, CSS and JavaScript.</p>
+            <a href="https://github.com/artfulracoon/Portfolio-Website" class="card-button">Github</a>
+        </div>
+    </div>
+</div>
 
-</html>
+    
+    <script src="../script.js"></script>
+    </body>
+  </html>

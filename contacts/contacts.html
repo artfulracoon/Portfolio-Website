@@ -1,168 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dogukan's Website</title>
-        <link rel="icon"
-            href="https://cdn-icons-png.flaticon.com/512/667/667318.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dogukan's Website</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/667/667318.png"
+    />
+    <link rel="stylesheet" href="contacts.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Doğukan Acar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../experience/experience.html">Experience</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contacts/contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="contacts.css">
-    </head>
-    <body>
-
-        <nav id="mainNavbar"
-            class="navbar navbar-dark navbar-expand-xl py-0 fixed-top">
-            <a class="navbar-brand" href="../index.html" id="navbarBrand">HOME</a>
-            <button class="navbar-toggler" data-toggle="collapse"
-                data-target="#navButtons" id="navbarToggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navButtons">
-                <ul class="navbar-nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../projects/projects.html"
-                            id="projectsButton">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="../blog/blog.html">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div
-            class="h-100 d-flex align-items-center justify-content-center">
-            <div class="container-fluid" id="mainDiv">
-                <div class="row row-margin justify-content-center"
-                    id="theRowToPushDown">
-                    <div class="col-4" id="textContent">
-                        <a href="https://github.com/artfulracoon"
-                            class="card-link">
-                            <div class="card-transparent mx-auto text-center">
-                                <img class="card-img-top img-fluid"
-                                    src="icons/github.png"
-                                    alt>
-
-                                <div class="card-body">
-                                    <h1 class="card-title">Github</h1>
-                                    <p class="card-text">Where I share my
-                                        projects.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4" id="textContent">
-                        <a href="https://www.linkedin.com/in/dogukan-acar/"
-                            class="card-link">
-                            <div class="card-transparent mx-auto text-center">
-                                <img class="card-img-top img-fluid"
-                                    src="icons/linkedin.png"
-                                    alt>
-
-                                <div class="card-body">
-                                    <h1 class="card-title">LinkedIn</h1>
-                                    <p class="card-text">Where I grow my
-                                        network.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row row-margin justify-content-center">
-                    <div class="col-4" id="textContent">
-                        <a href="https://www.instagram.com/dogu.acr/"
-                            class="card-link">
-                            <div class="card-transparent mx-auto text-center">
-                                <img class="card-img-top img-fluid"
-                                    src="icons/instagram.png"
-                                    alt>
-
-                                <div class="card-body">
-                                    <h1 class="card-title">Instagram</h1>
-                                    <p class="card-text">Where I share
-                                        photos.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4" id="textContent">
-                        <a href="https://letterboxd.com/artful_racoon/"
-                            class="card-link">
-                            <div class="card-transparent mx-auto text-center">
-                                <img class="card-img-top img-fluid"
-                                    src="icons/cinema.png"
-                                    alt>
-
-                                <div class="card-body">
-                                    <h1 class="card-title">Letterboxd</h1>
-                                    <p class="card-text">Where I share my
-                                        passion for movies.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+    <nav id="hamburger-nav">
+      <div class="logo" href="../index.html">Doğukan Acar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <div id="refs">
-            <a href="https://www.flaticon.com/free-icons/github"
-                title="github icons">Github icons created by Pixel perfect -
-                Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/linkedin"
-                title="linkedin icons">Linkedin icons created by riajulislam -
-                Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/movie-theater"
-                title="movie theater icons">Movie theater icons created by
-                Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/instagram-logo"
-                title="instagram logo icons">Instagram logo icons created by
-                Pixel perfect - Flaticon</a>
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="../experience/experience.html" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="../projects/projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="../contacts/contacts.html" onclick="toggleMenu()">Contact</a></li>
         </div>
+      </div>
+    </nav>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    <div id="mainDiv">
 
-        <script>
-                $(function () {
-                  $(document).scroll(function(){
-                    var $nav = $("#mainNavbar");
-                    var $brand = $("#navbarBrand");
-                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-                    $brand.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-                  })
-                })
-              </script>
+      <div id="contactFormContainer">
+        <form id="contactForm" action="your-server-endpoint" method="POST">
+            <h1>Contact Me via Email</h1>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-    </body>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div id="rightSide">
+
+
+            <div>
+                <a href="https://www.linkedin.com/in/dogukan-acar/">
+                    <div id="content">
+                        <img src="../assets/linkedin.png" />
+                    </div>
+                </a>
+            </div>
+
+          <div>
+            <a href="https://github.com/artfulracoon">
+              <div id="content">
+                <img src="../assets/github.png" />
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.instagram.com/dogu.acr/">
+              <div id="content">
+                <img src="../assets/instagram.png" alt />
+              </div>
+            </a>
+          </div>
+          
+      </div>
+    </div>
+
+    <div id="refs">
+      <a href="https://www.flaticon.com/free-icons/github" title="github icons"
+        >Github icons created by Pixel perfect - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/linkedin"
+        title="linkedin icons"
+        >Linkedin icons created by riajulislam - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/movie-theater"
+        title="movie theater icons"
+        >Movie theater icons created by Freepik - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.com/free-icons/instagram-logo"
+        title="instagram logo icons"
+        >Instagram logo icons created by Pixel perfect - Flaticon</a
+      >
+    </div>
+    <script src="../script.js"></script>
+  </body>
 </html>
