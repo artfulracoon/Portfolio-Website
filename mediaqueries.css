@@ -1,4 +1,6 @@
 @media screen and (max-width: 1400px) {
+
+
     #desktop-nav {
         display: none;
     }
@@ -6,19 +8,8 @@
     #hamburger-nav {
        display: flex; 
     }
+
 }
-
-
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    
-    #hamburger-nav {
-       display: flex; 
-    }
-}
-
 
 @media screen and (max-width: 375px) {
     #desktop-nav {
@@ -77,5 +68,20 @@
         margin: 5vh 0 5vh 1vh;
     }
 
+    /* TEXT TITLE */
+
+.section__text__p1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+  }
 
 }

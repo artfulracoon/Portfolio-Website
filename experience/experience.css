@@ -136,82 +136,32 @@ nav a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
-/* SECTION */
 
-section {
-  display: flex;
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 12rem;
-  box-sizing: border-box;
-  min-height: fit-content;
+/* SWIPER */
+
+.swiper {
+  width: 50%;
+  height: 500px;
 }
 
-/* PROFILE SECTION */
-
-#profile {
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  border-radius: 3%;
 }
 
-.border{
-  width: 50rem;
-  height: 38rem;
-  border-radius: 2%;
-  border: 0.1rem;
-  margin: 1rem;
-  background-color: white;
-  box-shadow: 10px 10px;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
-}
-
-.border:hover {
-  transform: translateY(-10px);
-}
-
-.experience {
-  display:flex;
-  margin: 1rem;
-}
-
-.section__pic-container {
-  display: flex;
-  align-items: center;
-  height: 50vh;
-  width: 50vh;
-  margin: auto 0;
-}
-
-.section__pic-container img {
-  width: 10rem;
-  height: auto;
-  border-radius: 5%;
-  border-color: black;
-  border-style: solid;
-  margin-left: 5rem;
+.swiper-slide img {
   
+  width: 20%;
+  height: auto;
+  object-fit: cover;
 }
 
-.section__text {
-  align-self: center;
-}
-
-.section__text li {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.section__text ul  li p {
-  padding-top: 1.5rem;
-}
-
-.section__text li img {
-  height: 8rem;
-  width: 8rem;
-}
+/* TEXT */
 
 .section__text__p1 {
   text-align: center;

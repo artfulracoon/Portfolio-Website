@@ -10,6 +10,11 @@
     />
     <link rel="stylesheet" href="experience.css" />
     <link rel="stylesheet" href="../mediaqueries.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -34,12 +39,20 @@
         </div>
         <div class="menu-links">
           <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
-          <li><a href="../experience/experience.html" onclick="toggleMenu()">Experience</a></li>
           <li>
-            <a href="../projects/projects.html" onclick="toggleMenu()">Projects</a>
+            <a href="../experience/experience.html" onclick="toggleMenu()"
+              >Experience</a
+            >
           </li>
           <li>
-            <a href="../contacts/contacts.html" onclick="toggleMenu()">Contact</a>
+            <a href="../projects/projects.html" onclick="toggleMenu()"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="../contacts/contacts.html" onclick="toggleMenu()"
+              >Contact</a
+            >
           </li>
         </div>
       </div>
@@ -48,78 +61,93 @@
     <p class="section__text__p1">My Academic and Professional</p>
     <p class="title">Experiences</p>
 
-    <section id="profile">
-      <div class="border">
-        <p class="title">Ege Üniversitesi</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="title">Ege Üniversitesi</p>
+          <img src="../assets/ege.png" alt="" />
+          <ul>
+            <li>
+              <p>Ege Üniversitesi Computer Engineering Bachelors' Degree</p>
+            </li>
+            <li>
+              <p>3.61 GPA & High Honors' Degree</p>
+            </li>
+            <li>
+              <p>2018-2023</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <p class="title">Free University of Bolzano</p>
 
-        <div class="experience">
-          <div class="section__pic-container">
-            <img src="../assets/ege.png" alt="" />
-          </div>
+          <img src="../assets/bolzano.png" alt="" />
 
-          <div class="section__text">
-            <ul>
-              <li>
-                <p>Ege Üniversitesi Computer Engineering Bachelors' Degree</p>
-              </li>
-              <li>
-                <p>3.61 GPA & High Honors' Degree</p>
-              </li>
-              <li>
-                <p>2018-2023</p>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <p>Erasmus at UNIBZ Computer Science</p>
+            </li>
+            <li>
+              <p>Experienced European Academy firsthand</p>
+            </li>
+            <li>
+              <p>2021 - 2022 Spring Semester</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <p class="title">Endian Srl</p>
+          <img src="../assets/endian.png" alt="" />
+          <ul>
+            <li>
+              <p>QA Engineer @ Endian Srl</p>
+            </li>
+            <li>
+              <p>Started as an intern, now a fully quailified engineer</p>
+            </li>
+            <li>
+              <p>2022 - Current</p>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="border">
-        <p class="title">Free University of Bolzano</p>
-        <div class="experience">
-          <div class="section__pic-container">
-            <img src="../assets/bolzano.png" alt="" />
-          </div>
-
-          <div class="section__text">
-            <ul>
-              <li>
-                <p>Erasmus at UNIBZ Computer Science</p>
-              </li>
-              <li>
-                <p>Experienced European Academy firsthand</p>
-              </li>
-              <li>
-                <p>2021 - 2022 Spring Semester</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="autoplay-progress">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
       </div>
+    </div>
 
-      <div class="border">
-        <p class="title">Endian Srl</p>
 
-        <div class="experience">
-          <div class="section__pic-container">
-            <img src="../assets/endian.png" alt="" />
-          </div>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-          <div class="section__text">
-            <ul>
-              <li>
-                <p>QA Engineer @ Endian Srl</p>
-              </li>
-              <li>
-                <p>Started as an intern, now a fully quailified engineer</p>
-              </li>
-              <li>
-                <p>2022 - Current</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Initialize Swiper -->
+
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+    });
+  </script>
+
     <script src="../script.js"></script>
   </body>
 </html>

@@ -1,226 +1,250 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 p {
-    color: rgb(85,85,85);
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION*/
 
-a, .btn {
-    transition: all 300ms ease;
+a,
+.btn {
+  transition: all 300ms ease;
 }
 
 /* DESKTOP NAVBAR */
 
-nav, 
+nav,
 .nav-links {
-    display: flex;
+  display: flex;
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
-    transition: all 300ms ease;
-    padding: 1rem;
-    border-radius: 2rem;
+  color: black;
+  text-decoration: none;
+  transition: all 300ms ease;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 nav a:hover {
-    border: rgb(0, 0, 0) 0.1rem solid;
-    color: white;
-    background-color: black;
+  border: rgb(0, 0, 0) 0.1rem solid;
+  color: white;
+  background-color: black;
 }
 
 .logo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-.logo:hover{
-    cursor: default;
+.logo:hover {
+  cursor: default;
 }
 
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-    display: none;
+  display: none;
 }
 
 .hamburger-menu {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
 .hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out; 
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #f2f2f2;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out; 
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f2f2f2;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: center;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: center;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .menu-links.open {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
+  transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
+  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 /* TEXT TITLE */
 
 .section__text__p1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #333;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
 }
 
-.title{
-    margin-bottom: 3rem;
-    font-size: 3rem;
-    text-align: center;
-    color: black;
+.title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
 }
 
-/* CARDS */
+/* SWIPER */
 
-/* CARDS */
+.swiper {
+    width: 50%;
+    height: 500px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    padding-top: 5rem;
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
 
 /* CARDS */
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem; /* Space between the cards */
-    width: 75%;
-    margin: 0 auto; /* Centers the container horizontally */
-    align-items: center; /* Aligns cards horizontally within the container */
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem; /* Adds space between the cards */
-}
-
-.card {
-    width: 50%;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
-    border: #333;
-    border-radius: 1%;
-    border-style: solid;
-    margin-bottom: 0; /* Remove any default bottom margin */
-    padding: 10px; /* Adjust padding as needed */
-    height: 35rem; /* Set a minimum height if needed */
-    overflow: hidden; /* Control overflow to manage layout */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card-image {
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; /* Space between the cards */
+  width: 75%;
+  margin: 0 auto; /* Centers the container horizontally */
+  align-items: center; /* Aligns cards horizontally within the container */
 }
 
 .card-content {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
 }
 
 .card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .card-description {
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
 }
 
 .card-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .card-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
